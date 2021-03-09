@@ -1,12 +1,13 @@
 {
-  "name": "Natours",
+  "name": "SteenbergOfficePark",
   "version": "1.0.0",
   "description": "This web site has been created to experiment, and show off, my current skills using CSS.\r As of 16/11/2020 it is an ongoing development - I'll remove this line upon completion.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "compile-sass": "node-sass sass/main.scss css/style.css -w",
-    "live-server": "live-server"
+    "live-server": "live-server",
+    "start": "npm run liver-server"
   },
   "repository": {
     "type": "git",
@@ -18,9 +19,9 @@
   "bugs": {
     "url": "https://github.com/pdqsoftware/css_natours_website/issues"
   },
-  "homepage": "https://github.com/pdqsoftware/css_natours_website#readme",
   "devDependencies": {
     "live-server": "^1.2.1",
     "node-sass": "^5.0.0"
-  }
+  },
+  "dependencies": {}
 }
