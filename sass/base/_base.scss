@@ -1,0 +1,20 @@
+// Add a universal selector to reset browser settings
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+// Although this is a typographical piece of code it has been left here as it is a fundamental setting
+// determining how the rest of the webpage will look.
+// It defines what 1rem is set to
+html {
+    // font-size: 10px;
+    font-size: 62.5%;
+}
+
+body {
+    box-sizing: border-box;
+}

@@ -1,0 +1,73 @@
+// All of the font settings are inherited, from this master body, by the children pages
+body {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    // font-size: 16px;
+    line-height: 1.7;
+    color: $color-grey-dark;
+    padding: 3rem;
+}
+
+.heading-primary {
+    color: $color-white;
+    // The children will inherit the above white colour
+    text-transform: uppercase;
+
+    backface-visibility: hidden;
+    margin-bottom: 6rem;
+
+    &--main {
+        display: block;
+        font-size: 6rem;
+        font-weight: 400;
+        letter-spacing: 3.5rem;
+        animation-name: moveInFromLeft;
+        animation-duration: 3s;
+        animation-timing-function: ease-in;
+    }
+    
+    &--sub {
+        display: block;
+        font-size: 2rem;
+        font-weight: 700;
+        letter-spacing: 1.75rem;
+    
+        animation-name: moveInFromRight;
+        animation-duration: 3s;
+    }
+}
+
+.heading-secondary {
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    display: inline-block;
+
+    background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    letter-spacing: 2px;
+    transition: all 0.2s;
+
+    &:hover {
+        transform: skewY(5deg) skewX(15deg) scale(1.1);
+        // text-shadow: 0.5rem 1rem 2rem rgba($color-black, 0.3);
+        text-shadow: 1.5rem 3rem 1rem rgba($color-black, 0.3);
+        //  1rem 2rem rgba($color-black, 0.3);
+    }
+}
+
+.heading-tertiary {
+    font-size: $default-font-size;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.paragraph {
+    font-size: $default-font-size;
+
+    &:not(:last-child) {
+        margin-bottom: 3rem;
+    }
+}
